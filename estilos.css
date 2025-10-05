@@ -1,0 +1,65 @@
+:root{
+    font-family: "Source Sans 3";
+    font-size: calc(0.8rem + 0.5vmax);
+    --color-base: rgb(21, 22, 27);
+    --color-contraste: rgb(192, 192, 192);
+    --color-enfasis: rgb(82, 148, 226);
+    --color-enfasis-light: rgb(31, 36, 58);
+    --color-visitado: rgb(113, 82, 226);
+}
+ul{
+    padding: 0;
+}
+h1{
+    text-align: center;
+}
+body{
+    background-color: var(--color-base);
+    color: var(--color-contraste);
+    margin: 1em;
+}
+section h1, section p, section h2{
+    margin: 0;
+}
+section{
+    display: flex;
+    flex-flow: column;
+    padding: 1em 0;
+    margin: 0 5em;
+}
+section h1{
+    margin: 0.25em 0;
+}
+.proyecto h2{
+    margin: 0.55em 0;
+}
+
+.proyectos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+div.proyecto{
+    padding: 0.25em 2em 1em;
+    border: 1px solid var(--color-enfasis-light);
+    box-shadow: inset 0 0 0.5em 0 var(--color-enfasis-light);
+    border-radius: 0.2em;
+    max-width: 22em;
+    display: flex;
+    flex-flow: column;
+}
+.proyecto p + *{
+    margin: 0.5em 0;
+}
+.proyecto img{
+    text-align: center;
+    width: 100%
+}
+.proyecto a{
+    color: var(--color-enfasis)
+}
+.proyecto a:visited{
+    color: var(--color-visitado)
+}
